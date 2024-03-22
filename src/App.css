@@ -1,0 +1,98 @@
+.container{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.resultados-anteriores{
+  width: 1000px;
+  background-color: #616161;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+font-size: 20px;
+text-align: center;
+margin: auto;
+
+}
+.loterias-visible{
+  width: 1000px;
+  display: flex;
+  background-color:rgba(0, 128, 0, 0.772);
+  font-size: 30px;
+  justify-content:center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 10px; 
+color: #fff;
+}
+.loterias{
+
+display: none;  
+
+}
+
+.resultados{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  background-color: #52b231;
+  border-radius: 50%;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.btn-obtener{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(115, 214, 253);
+cursor: pointer;
+}
+p{
+  display: flex;
+  justify-content: center;
+}
+.nacional{
+  background-color: #ebe7e7;
+  text-align: center;
+  font-size: 25px;
+}
+.real{
+  background-color: #ebe7e7;
+  text-align: center;
+  font-size: 25px;
+}
+.btnVoz{
+  /* Aquí puedes definir los estilos que desees */
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Agrega bordes redondeados */
+  padding: 10px 20px; /* Agrega relleno al botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  
+
+}
+                                   /*adaptacion a mobile*/
+
+@media screen and (max-width:1000px){
+  .loterias-visible{
+  width: 100%;
+  text-align: justify;
+  
+  }
+  .resultados-anteriores{
+    width: 100%;
+  }
+
+ 
+}                                  
