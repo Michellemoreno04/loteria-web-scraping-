@@ -1,6 +1,7 @@
 import React,{ useState,useEffect } from 'react'
 import './App.css'
 import axios from 'axios';
+import { lazy, Suspense } from 'react'; // para cargar loding
 
 
 
@@ -16,6 +17,8 @@ const año = fechaActual.getFullYear();
 
 // Formatear la fecha como desees
 const fechaFormateada = `${dia}/${mes}/${año}`;
+
+const Ap = lazy(()=> import(App))
 
 function App() {
   const [numeros, setNumeros] = useState({});
@@ -43,8 +46,9 @@ function App() {
   }
 
   return (
+    
 <div>
-  
+
 <div className='container'>
 <h1>Loteria nacional</h1>
  </div>
@@ -112,10 +116,12 @@ function App() {
 
  
  <button className='btn-obtener' onClick={obtenerData}>Obtener</button>
-
+ 
 
 </div>
+
   )
+  
 }
 
 export default App
